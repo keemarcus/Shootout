@@ -64,8 +64,25 @@ public class Controller : MonoBehaviour
     private void EndGame(){
         // print our results to the console
         Debug.Log("Targets Hit: " + targetsHit + "\n" + "Time: " + (Time.realtimeSinceStartup - spawnDelay).ToString("f3"));
+
+        // print the outcome to the console
+        if(DetermineOutcome()){
+            Debug.Log("HIT");
+        } else{
+            Debug.Log("MISS");
+        }
         
         // exit game mode
         UnityEditor.EditorApplication.isPlaying = false;
+    }
+
+    private bool DetermineOutcome(){
+        if(targetsHit >= Random.Range(0, 4)){
+            // it's a hit
+            return true;
+        } else{
+            // it's a miss
+            return false;
+        }
     }
 }
