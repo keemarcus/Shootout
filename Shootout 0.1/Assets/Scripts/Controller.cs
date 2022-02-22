@@ -31,16 +31,14 @@ public class Controller : MonoBehaviour
             if(Input.GetMouseButtonDown(0)){
                 Click(Camera.main.ScreenToWorldPoint(Input.mousePosition));
             }
-        }
-        
-        
+        } 
     }
     
     private void Click(Vector2 mousePos){
         clickCount += 1;
 
         // see if he hit the target
-        if(Vector2.Distance(currentTarget.transform.position, mousePos) <= 0.75f){targetsHit += 1;}
+        if(currentTarget.GetComponent<Collider2D>().bounds.Contains(mousePos)){targetsHit += 1;}
 
         if(clickCount >= 3){
             EndGame();
@@ -62,22 +60,49 @@ public class Controller : MonoBehaviour
     }
 
     private void EndGame(){
+        float playerTime = Time.realtimeSinceStartup - spawnDelay;
+        int enemyHits = GenerateEnemyHits();
+        float enemyTime = GenerateEnemyTime();
+
+        bool playerOutcome;
+        bool enemyOutcome;
+
         // print our results to the console
-        Debug.Log("Targets Hit: " + targetsHit + "\n" + "Time: " + (Time.realtimeSinceStartup - spawnDelay).ToString("f3"));
+        Debug.Log("Targets Hit: " + targetsHit + "\n" + "Time: " + playerTime.ToString("f3"));
+
+        // print enemy results
+        Debug.Log("Enemy Hits: " + enemyHits + "\n" + "Enemy Time: " + enemyTime.ToString("f3"));
+
+        // first, generate the outcome of the person who shot first (player will win if they tied)
+        //  then, if they hit, subtract 1 from the other person's hits and generate their outcome
+        if(enemyTime < playerTime){
+            enemyOutcome = DetermineOutcome(enemyHits);
+            
+            if(enemyOutcome && targetsHit > 0){targetsHit --;}
+            playerOutcome = DetermineOutcome(targetsHit);
+        } else{
+            playerOutcome = DetermineOutcome(targetsHit);
+            
+            if(playerOutcome && enemyHits > 0){enemyHits --;}
+            enemyOutcome = DetermineOutcome(enemyHits);
+        }
+
+        // print the new hit totals
+        Debug.Log("Player Hits: " + targetsHit + "\n" + "Enemy Hits: " + enemyHits);
 
         // print the outcome to the console
-        if(DetermineOutcome()){
-            Debug.Log("HIT");
-        } else{
-            Debug.Log("MISS");
-        }
-        
+        Debug.Log("Player Hit? - " + playerOutcome + "\n" + "Enemy Hit? - " + enemyOutcome);
+
+        // reset all the relevant variables
+        targetsHit = 0;
+        clickCount = 0;
+
         // exit game mode
         UnityEditor.EditorApplication.isPlaying = false;
     }
 
-    private bool DetermineOutcome(){
-        if(targetsHit >= Random.Range(0, 4)){
+    private bool DetermineOutcome(int hits){
+        if(hits >= Random.Range(0, 4)){
             // it's a hit
             return true;
         } else{
@@ -85,4 +110,28 @@ public class Controller : MonoBehaviour
             return false;
         }
     }
+
+    private float GenerateEnemyTime(){
+        return Random.Range(1f,2f);
+    }
+
+    private int GenerateEnemyHits(){
+        // generate a random number 0-3, more weighted to 1-2
+        int a = Random.Range(0,5);
+        int b = Random.Range(0,5);
+        int c = Random.Range(0,5);
+        int d = Random.Range(0,5);
+        int result = Mathf.CeilToInt((a + b + c + d)/4);
+        if(result > 3){result = 3;}
+
+        return result;
+    }
+    // private void Start() {
+    //     // generate a bunch of enemyhits
+    //     float total = 0;
+    //     for(int i=0; i<100; i++){
+    //         total += GenerateEnemyTime();
+    //     }
+    //     Debug.Log((total/100).ToString("f3"));
+    // }
 }
