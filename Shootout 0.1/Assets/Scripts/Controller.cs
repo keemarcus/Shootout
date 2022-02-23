@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Controller : MonoBehaviour
 {
@@ -13,25 +14,46 @@ public class Controller : MonoBehaviour
     public Vector2 spawnBoundBotRight;
     // time delay before the first target spawns
     public float spawnDelay;
+    // time the game started
+    private float startTime;
     // bool to track if the first target has been spawned
     private bool firstTargetSpawned = false;
+    // bool to track if the game has started
+    private bool started = false;
     // int to track how many times the player has clicked
     private int clickCount = 0;
     // int to track how many targets we've hit
     private int targetsHit = 0;
+    // status indicator
+    public Text status;
 
     void Update()
     {
-        if(!firstTargetSpawned){
-            if(Time.realtimeSinceStartup >= spawnDelay){
+        if(started){
+            if(firstTargetSpawned){
+                status.text = "GO";
+            } else{
+                status.text = Mathf.CeilToInt((spawnDelay + startTime) - Time.realtimeSinceStartup).ToString();
+            }
+            if(Input.GetMouseButtonDown(0)){Click(Camera.main.ScreenToWorldPoint(Input.mousePosition));}
+            else if(!firstTargetSpawned && (Time.realtimeSinceStartup - startTime >= spawnDelay)){
                 SpawnTarget();
                 firstTargetSpawned = true;
             }
-        } else{
-            if(Input.GetMouseButtonDown(0)){
-                Click(Camera.main.ScreenToWorldPoint(Input.mousePosition));
-            }
-        } 
+        }
+        else{
+            status.text = null;
+        }
+        // if(!started){
+        //     if(Time.realtimeSinceStartup >= spawnDelay){
+        //         SpawnTarget();
+        //         started = true;
+        //     }
+        // } else{
+        //     if(Input.GetMouseButtonDown(0)){
+        //         Click(Camera.main.ScreenToWorldPoint(Input.mousePosition));
+        //     }
+        // } 
     }
     
     private void Click(Vector2 mousePos){
@@ -59,13 +81,21 @@ public class Controller : MonoBehaviour
         currentTarget = Instantiate(target, (Vector3)spawnPoint, Quaternion.identity);
     }
 
+    public void StartGame(){
+        started = true;
+        startTime = Time.realtimeSinceStartup;
+    }
+
     private void EndGame(){
-        float playerTime = Time.realtimeSinceStartup - spawnDelay;
+        float playerTime = Time.realtimeSinceStartup - (startTime+spawnDelay);
         int enemyHits = GenerateEnemyHits();
         float enemyTime = GenerateEnemyTime();
 
         bool playerOutcome;
         bool enemyOutcome;
+
+        // destroy the current target
+        if(currentTarget != null){Destroy(currentTarget);}
 
         // print our results to the console
         Debug.Log("Targets Hit: " + targetsHit + "\n" + "Time: " + playerTime.ToString("f3"));
@@ -96,7 +126,11 @@ public class Controller : MonoBehaviour
         // reset all the relevant variables
         targetsHit = 0;
         clickCount = 0;
+        started = false;
+        firstTargetSpawned = false;
+    }
 
+    public void Exit(){
         // exit game mode
         UnityEditor.EditorApplication.isPlaying = false;
     }
