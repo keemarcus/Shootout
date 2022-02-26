@@ -18,52 +18,77 @@ public class Controller : MonoBehaviour
     private float startTime;
     // bool to track if the first target has been spawned
     private bool firstTargetSpawned = false;
-    // bool to track if the game has started
-    private bool started = false;
     // int to track how many times the player has clicked
     private int clickCount = 0;
     // int to track how many targets we've hit
     private int targetsHit = 0;
     // status indicator
     public Text status;
+    private GameState gameState = GameState.Idle;
+    private CharacterState playerState = CharacterState.Healthy;
+    private CharacterState enemyState = CharacterState.Healthy;
+    public Animator playerAnim;
+    public Animator enemyAnim;
 
     void Update()
     {
-        if(started){
-            if(firstTargetSpawned){
-                status.text = "GO";
-            } else{
-                status.text = Mathf.CeilToInt((spawnDelay + startTime) - Time.realtimeSinceStartup).ToString();
-            }
-            if(Input.GetMouseButtonDown(0)){Click(Camera.main.ScreenToWorldPoint(Input.mousePosition));}
-            else if(!firstTargetSpawned && (Time.realtimeSinceStartup - startTime >= spawnDelay)){
-                SpawnTarget();
-                firstTargetSpawned = true;
-            }
+        switch(gameState){
+            case GameState.Idle:
+                // status.text = null;
+                break;
+            case GameState.Active:
+                UpdateTimer(firstTargetSpawned);
+                if(firstTargetSpawned && Input.GetMouseButtonDown(0)){Click(Camera.main.ScreenToWorldPoint(Input.mousePosition));}
+                else if(!firstTargetSpawned && (Time.realtimeSinceStartup - startTime >= spawnDelay)){
+                    SpawnTarget();
+                    firstTargetSpawned = true;
+                }
+                break;
+            default:
+                // status.text = null;
+                break;
         }
-        else{
-            status.text = null;
+
+        switch(playerState){
+            case CharacterState.Healthy:
+                playerAnim.SetFloat("State", 0f);
+                break;
+            case CharacterState.Wounded:
+                playerAnim.SetFloat("State", .5f);
+                break;
+            case CharacterState.Dead:
+                playerAnim.SetFloat("State", 1f);
+                break;
         }
-        // if(!started){
-        //     if(Time.realtimeSinceStartup >= spawnDelay){
-        //         SpawnTarget();
-        //         started = true;
-        //     }
-        // } else{
-        //     if(Input.GetMouseButtonDown(0)){
-        //         Click(Camera.main.ScreenToWorldPoint(Input.mousePosition));
-        //     }
-        // } 
+
+        switch(enemyState){
+            case CharacterState.Healthy:
+                enemyAnim.SetFloat("State", 0f);
+                break;
+            case CharacterState.Wounded:
+                enemyAnim.SetFloat("State", .5f);
+                break;
+            case CharacterState.Dead:
+                enemyAnim.SetFloat("State", 1f);
+                break;
+        }
+    }
+    private void UpdateTimer(bool active){
+        if(active){
+            status.text = "GO";
+        } else{
+            status.text = Mathf.CeilToInt((spawnDelay + startTime) - Time.realtimeSinceStartup).ToString();
+        }
     }
     
     private void Click(Vector2 mousePos){
         clickCount += 1;
 
         // see if he hit the target
-        if(currentTarget.GetComponent<Collider2D>().bounds.Contains(mousePos)){targetsHit += 1;}
+        if(currentTarget != null && currentTarget.GetComponent<Collider2D>().bounds.Contains(mousePos)){targetsHit += 1;}
 
         if(clickCount >= 3){
-            EndGame();
+            DetermineOutcome();
         } else{
            // destroy the current target and spawn a new one
             SpawnTarget(); 
@@ -82,12 +107,19 @@ public class Controller : MonoBehaviour
     }
 
     public void StartGame(){
-        started = true;
+        gameState = GameState.Active;
         startTime = Time.realtimeSinceStartup;
+
+        // reset all the relevant variables
+        targetsHit = 0;
+        clickCount = 0;
+        playerState = CharacterState.Healthy;
+        enemyState = CharacterState.Healthy;
+        firstTargetSpawned = false;
     }
 
-    private void EndGame(){
-        float playerTime = Time.realtimeSinceStartup - (startTime+spawnDelay);
+    private void DetermineOutcome(){
+       float playerTime = Time.realtimeSinceStartup - (startTime+spawnDelay);
         int enemyHits = GenerateEnemyHits();
         float enemyTime = GenerateEnemyTime();
 
@@ -98,36 +130,85 @@ public class Controller : MonoBehaviour
         if(currentTarget != null){Destroy(currentTarget);}
 
         // print our results to the console
-        Debug.Log("Targets Hit: " + targetsHit + "\n" + "Time: " + playerTime.ToString("f3"));
+        // Debug.Log("Targets Hit: " + targetsHit + "\n" + "Time: " + playerTime.ToString("f3"));
 
         // print enemy results
-        Debug.Log("Enemy Hits: " + enemyHits + "\n" + "Enemy Time: " + enemyTime.ToString("f3"));
+        // Debug.Log("Enemy Hits: " + enemyHits + "\n" + "Enemy Time: " + enemyTime.ToString("f3"));
 
         // first, generate the outcome of the person who shot first (player will win if they tied)
         //  then, if they hit, subtract 1 from the other person's hits and generate their outcome
         if(enemyTime < playerTime){
-            enemyOutcome = DetermineOutcome(enemyHits);
+            // determine the enemy outcome
+            enemyOutcome = CheckForHit(enemyHits);
+            // injure the player if they hit
+            if(enemyOutcome){
+                // if they were killed then the game is over
+                if(InjureCharacter("Player")){
+                    return;
+                }
+            }
             
-            if(enemyOutcome && targetsHit > 0){targetsHit --;}
-            playerOutcome = DetermineOutcome(targetsHit);
+            // determine the player outcome
+            playerOutcome = CheckForHit(targetsHit);
+            // injure the enemy if they hit
+            if(playerOutcome){
+                // if they were killed then the game is over
+                if(InjureCharacter("Enemy")){
+                    return;
+                }
+            }
         } else{
-            playerOutcome = DetermineOutcome(targetsHit);
+            // determine the enemy outcome
+            enemyOutcome = CheckForHit(enemyHits);
+            // injure the player if they hit
+            if(enemyOutcome){
+                // if they were killed then the game is over
+                if(InjureCharacter("Player")){
+                    return;
+                }
+            }
             
-            if(playerOutcome && enemyHits > 0){enemyHits --;}
-            enemyOutcome = DetermineOutcome(enemyHits);
-        }
+            // determine the player outcome
+            playerOutcome = CheckForHit(targetsHit);
+            // injure the enemy if they hit
+            if(playerOutcome){
+                // if they were killed then the game is over
+                if(InjureCharacter("Enemy")){
+                    return;
+                }
+            }
+        } 
 
-        // print the new hit totals
-        Debug.Log("Player Hits: " + targetsHit + "\n" + "Enemy Hits: " + enemyHits);
+        // subtract one from the characters hit totals if they're wounded
+        if(playerState == CharacterState.Wounded && targetsHit > 0){targetsHit --;}
+        if(enemyState == CharacterState.Wounded && enemyHits > 0){enemyHits --;}
+
+        // print the final hit totals
+        // Debug.Log("Player Hits: " + targetsHit + "\n" + "Enemy Hits: " + enemyHits);
 
         // print the outcome to the console
-        Debug.Log("Player Hit? - " + playerOutcome + "\n" + "Enemy Hit? - " + enemyOutcome);
+        // Debug.Log("Player Hit? - " + playerOutcome + "\n" + "Enemy Hit? - " + enemyOutcome);
+
+        // if we made it to this point then neither character is dead, so restart
+        Restart();
+    }
+
+    private void Restart(){
+        gameState = GameState.Active;
+        startTime = Time.realtimeSinceStartup;
 
         // reset all the relevant variables
         targetsHit = 0;
         clickCount = 0;
-        started = false;
         firstTargetSpawned = false;
+    }
+
+    private void EndGame(string winner){
+        // print the final outcome
+        // Debug.Log(winner + " Won");
+        status.text = winner + " Won";
+
+        gameState = GameState.Idle;
     }
 
     public void Exit(){
@@ -135,12 +216,39 @@ public class Controller : MonoBehaviour
         UnityEditor.EditorApplication.isPlaying = false;
     }
 
-    private bool DetermineOutcome(int hits){
+    private bool CheckForHit(int hits){
         if(hits >= Random.Range(0, 4)){
             // it's a hit
             return true;
         } else{
             // it's a miss
+            return false;
+        }
+    }
+
+    private bool InjureCharacter(string character){
+        // determine if the shot is fatal
+        if(Random.Range(0,2) > 0){
+            // end the game if it was fatal
+            if(character == "Player"){
+                playerState = CharacterState.Dead;
+                Debug.Log("Player is dead");
+                EndGame("Enemy");
+            } else if(character == "Enemy"){
+                enemyState = CharacterState.Dead;
+                Debug.Log("Enemy is dead");
+                EndGame("Player");
+            } 
+            return true;
+        } else{
+            // change the character's state to wounded if it wasn't fatal
+            if(character == "Player"){
+                playerState = CharacterState.Wounded;
+                Debug.Log("Player is wounded");
+            } else if(character == "Enemy"){
+                enemyState = CharacterState.Wounded;
+                Debug.Log("Enemy is wounded");
+            }
             return false;
         }
     }
@@ -168,4 +276,14 @@ public class Controller : MonoBehaviour
     //     }
     //     Debug.Log((total/100).ToString("f3"));
     // }
+
+    private enum GameState{
+        Idle,
+        Active
+    }
+    private enum CharacterState{
+        Healthy,
+        Wounded,
+        Dead
+    }
 }
