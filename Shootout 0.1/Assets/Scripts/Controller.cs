@@ -227,29 +227,34 @@ public class Controller : MonoBehaviour
     }
 
     private bool InjureCharacter(string character){
-        // determine if the shot is fatal
-        if(Random.Range(0,2) > 0){
-            // end the game if it was fatal
-            if(character == "Player"){
+        if(character == "Player"){
+            // determine if the shot is fatal
+            if(playerState == CharacterState.Wounded || Random.Range(0,2) > 0){
+                // end the game if it was fatal
                 playerState = CharacterState.Dead;
                 Debug.Log("Player is dead");
                 EndGame("Enemy");
-            } else if(character == "Enemy"){
+                return true; 
+            } else {
+                // change the character's state to wounded if it wasn't fatal
+                playerState = CharacterState.Wounded;
+                Debug.Log("Player is wounded");
+                return false;
+            }
+        } else{
+            // determine if the shot is fatal
+            if(enemyState == CharacterState.Wounded || Random.Range(0,2) > 0){
+                // end the game if it was fatal
                 enemyState = CharacterState.Dead;
                 Debug.Log("Enemy is dead");
                 EndGame("Player");
-            } 
-            return true;
-        } else{
-            // change the character's state to wounded if it wasn't fatal
-            if(character == "Player"){
-                playerState = CharacterState.Wounded;
-                Debug.Log("Player is wounded");
-            } else if(character == "Enemy"){
+                return true;
+            } else{
+                // change the character's state to wounded if it wasn't fatal
                 enemyState = CharacterState.Wounded;
                 Debug.Log("Enemy is wounded");
+                return false;
             }
-            return false;
         }
     }
 
