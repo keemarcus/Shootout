@@ -1,232 +1,232 @@
 fileFormatVersion: 2
-guid: 31f65882c674ace4b8f4915d47f170b0
+guid: eff9138062991224593f869bf71075bd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6647633277329158119
-    second: Shoot_Test_0
+      213: -3900635203841032649
+    second: Shoot_Test_Pallete_Swap_0
   - first:
-      213: 4641453211994708085
-    second: Shoot_Test_1
+      213: -1031217030418029416
+    second: Shoot_Test_Pallete_Swap_1
   - first:
-      213: -2880670950559437991
-    second: Shoot_Test_2
+      213: 265098244743179449
+    second: Shoot_Test_Pallete_Swap_2
   - first:
-      213: -3316830367639941946
-    second: Shoot_Test_3
+      213: -1251286514891229593
+    second: Shoot_Test_Pallete_Swap_3
   - first:
-      213: -8640833960330136641
-    second: Shoot_Test_4
+      213: -3458117475619433166
+    second: Shoot_Test_Pallete_Swap_4
   - first:
-      213: -278245149994121105
-    second: Shoot_Test_5
+      213: 3978769280477375992
+    second: Shoot_Test_Pallete_Swap_5
   - first:
-      213: 1900864294812974448
-    second: Shoot_Test_6
+      213: 8724659562197672455
+    second: Shoot_Test_Pallete_Swap_6
   - first:
-      213: -6816080009071095771
-    second: Shoot_Test_7
+      213: -5390667254864024936
+    second: Shoot_Test_Pallete_Swap_7
   - first:
-      213: -2215090684159912675
-    second: Shoot_Test_8
+      213: 7626880807110918803
+    second: Shoot_Test_Pallete_Swap_8
   - first:
-      213: -1462814716579069673
-    second: Shoot_Test_9
+      213: -3201441744989231122
+    second: Shoot_Test_Pallete_Swap_9
   - first:
-      213: -3460569526850432607
-    second: Shoot_Test_10
+      213: 8276648592062168007
+    second: Shoot_Test_Pallete_Swap_10
   - first:
-      213: 1264357006333687472
-    second: Shoot_Test_11
+      213: 261717085741484906
+    second: Shoot_Test_Pallete_Swap_11
   - first:
-      213: 2043287989634339213
-    second: Shoot_Test_12
+      213: 7935484808084893602
+    second: Shoot_Test_Pallete_Swap_12
   - first:
-      213: -2826129299901776066
-    second: Shoot_Test_13
+      213: 107799040399824128
+    second: Shoot_Test_Pallete_Swap_13
   - first:
-      213: 2873441238698482014
-    second: Shoot_Test_14
+      213: -3703911537790530127
+    second: Shoot_Test_Pallete_Swap_14
   - first:
-      213: -1742464168262410148
-    second: Shoot_Test_15
+      213: -2222972656663147577
+    second: Shoot_Test_Pallete_Swap_15
   - first:
-      213: -3601314369623911064
-    second: Shoot_Test_16
+      213: 8927820590786219712
+    second: Shoot_Test_Pallete_Swap_16
   - first:
-      213: 3773509529374835860
-    second: Shoot_Test_17
+      213: -5876798685553277522
+    second: Shoot_Test_Pallete_Swap_17
   - first:
-      213: -6359115954247959669
-    second: Shoot_Test_18
+      213: 2336945775545586728
+    second: Shoot_Test_Pallete_Swap_18
   - first:
-      213: -1220252163931136049
-    second: Shoot_Test_19
+      213: 640634850934339637
+    second: Shoot_Test_Pallete_Swap_19
   - first:
-      213: -621716418667102030
-    second: Shoot_Test_20
+      213: -2542215601281160470
+    second: Shoot_Test_Pallete_Swap_20
   - first:
-      213: -844207166180623761
-    second: Shoot_Test_21
+      213: -8963514552760516440
+    second: Shoot_Test_Pallete_Swap_21
   - first:
-      213: 6629499462913005880
-    second: Shoot_Test_22
+      213: -3766555452049879916
+    second: Shoot_Test_Pallete_Swap_22
   - first:
-      213: -5097644886982529160
-    second: Shoot_Test_23
+      213: -2239028179016903368
+    second: Shoot_Test_Pallete_Swap_23
   - first:
-      213: -8737998845062796925
-    second: Shoot_Test_24
+      213: 202389692678490963
+    second: Shoot_Test_Pallete_Swap_24
   - first:
-      213: -1568081480920653639
-    second: Shoot_Test_25
+      213: -5104713517642315212
+    second: Shoot_Test_Pallete_Swap_25
   - first:
-      213: -5479532377255514030
-    second: Shoot_Test_26
+      213: 1452009816099346991
+    second: Shoot_Test_Pallete_Swap_26
   - first:
-      213: -8464449093658088944
-    second: Shoot_Test_27
+      213: -217179878823370559
+    second: Shoot_Test_Pallete_Swap_27
   - first:
-      213: -2702876634940267312
-    second: Shoot_Test_28
+      213: -6326847391923352157
+    second: Shoot_Test_Pallete_Swap_28
   - first:
-      213: -8518816202408741188
-    second: Shoot_Test_29
+      213: 7080808878281416826
+    second: Shoot_Test_Pallete_Swap_29
   - first:
-      213: 4900549748668309275
-    second: Shoot_Test_30
+      213: 6468529726938821891
+    second: Shoot_Test_Pallete_Swap_30
   - first:
-      213: 966519224281691768
-    second: Shoot_Test_31
+      213: -6371542287522064831
+    second: Shoot_Test_Pallete_Swap_31
   - first:
-      213: 4099718747425941710
-    second: Shoot_Test_32
+      213: -8551426619816479762
+    second: Shoot_Test_Pallete_Swap_32
   - first:
-      213: -8784483000376362067
-    second: Shoot_Test_33
+      213: -8528082695030909813
+    second: Shoot_Test_Pallete_Swap_33
   - first:
-      213: -4016575580461003132
-    second: Shoot_Test_34
+      213: -2822924215931561481
+    second: Shoot_Test_Pallete_Swap_34
   - first:
-      213: -2083222491434329307
-    second: Shoot_Test_35
+      213: 3376977216565067894
+    second: Shoot_Test_Pallete_Swap_35
   - first:
-      213: -8174625819494743975
-    second: Shoot_Test_36
+      213: -6501060066291071454
+    second: Shoot_Test_Pallete_Swap_36
   - first:
-      213: -7876133039745414868
-    second: Shoot_Test_37
+      213: -3193709059039093921
+    second: Shoot_Test_Pallete_Swap_37
   - first:
-      213: -4611913908918051055
-    second: Shoot_Test_38
+      213: -7752384745043343984
+    second: Shoot_Test_Pallete_Swap_38
   - first:
-      213: 4804427420394211315
-    second: Shoot_Test_39
+      213: 3475068307183687280
+    second: Shoot_Test_Pallete_Swap_39
   - first:
-      213: 1692098337879560196
-    second: Shoot_Test_40
+      213: 1048736533214548093
+    second: Shoot_Test_Pallete_Swap_40
   - first:
-      213: -1159854345939066501
-    second: Shoot_Test_41
+      213: 3053171669346800293
+    second: Shoot_Test_Pallete_Swap_41
   - first:
-      213: -9185792815309663312
-    second: Shoot_Test_42
+      213: -3281117107057006433
+    second: Shoot_Test_Pallete_Swap_42
   - first:
-      213: 6686243923834585351
-    second: Shoot_Test_43
+      213: -2412953645937287976
+    second: Shoot_Test_Pallete_Swap_43
   - first:
-      213: -58459764162581752
-    second: Shoot_Test_44
+      213: 1752616000167423123
+    second: Shoot_Test_Pallete_Swap_44
   - first:
-      213: -8412272166832549559
-    second: Shoot_Test_45
+      213: 84975431539261766
+    second: Shoot_Test_Pallete_Swap_45
   - first:
-      213: -2879489162380376821
-    second: Shoot_Test_46
+      213: -906653562053400940
+    second: Shoot_Test_Pallete_Swap_46
   - first:
-      213: 8877786181281530260
-    second: Shoot_Test_47
+      213: -1027186287332393696
+    second: Shoot_Test_Pallete_Swap_47
   - first:
-      213: -5407412618234097280
-    second: Shoot_Test_48
+      213: 2886252178280170384
+    second: Shoot_Test_Pallete_Swap_48
   - first:
-      213: -8755563360617609216
-    second: Shoot_Test_49
+      213: -688278971558198583
+    second: Shoot_Test_Pallete_Swap_49
   - first:
-      213: 511939702540259261
-    second: Shoot_Test_50
+      213: -5121391939193909658
+    second: Shoot_Test_Pallete_Swap_50
   - first:
-      213: -3603153483955200400
-    second: Shoot_Test_51
+      213: -4822433632956978245
+    second: Shoot_Test_Pallete_Swap_51
   - first:
-      213: -8374613594336795921
-    second: Shoot_Test_52
+      213: 8892142077170653117
+    second: Shoot_Test_Pallete_Swap_52
   - first:
-      213: -8350964154111998608
-    second: Shoot_Test_53
+      213: 5426455026315352811
+    second: Shoot_Test_Pallete_Swap_53
   - first:
-      213: 9121376968887585387
-    second: Shoot_Test_54
+      213: 50858197710270905
+    second: Shoot_Test_Pallete_Swap_54
   - first:
-      213: -1949807330900622270
-    second: Shoot_Test_55
+      213: 538466705267862386
+    second: Shoot_Test_Pallete_Swap_55
   - first:
-      213: -8954179742967770105
-    second: Shoot_Test_56
+      213: 2550729291842950754
+    second: Shoot_Test_Pallete_Swap_56
   - first:
-      213: -4848001798411358203
-    second: Shoot_Test_57
+      213: -6402503120327345948
+    second: Shoot_Test_Pallete_Swap_57
   - first:
-      213: -6619071953609914381
-    second: Shoot_Test_58
+      213: 7166694117348772679
+    second: Shoot_Test_Pallete_Swap_58
   - first:
-      213: 1349630759985135583
-    second: Shoot_Test_59
+      213: 3003418506188457113
+    second: Shoot_Test_Pallete_Swap_59
   - first:
-      213: -187944398498187944
-    second: Shoot_Test_60
+      213: -4082129093343638797
+    second: Shoot_Test_Pallete_Swap_60
   - first:
-      213: -3814853517214270778
-    second: Shoot_Test_61
+      213: 4704570281146442574
+    second: Shoot_Test_Pallete_Swap_61
   - first:
-      213: -3327187928495275234
-    second: Shoot_Test_62
+      213: -3189990007989162055
+    second: Shoot_Test_Pallete_Swap_62
   - first:
-      213: 7450818098178749324
-    second: Shoot_Test_63
+      213: -6661161653374554777
+    second: Shoot_Test_Pallete_Swap_63
   - first:
-      213: -7369352254921794494
-    second: Shoot_Test_64
+      213: 2029523297279336037
+    second: Shoot_Test_Pallete_Swap_64
   - first:
-      213: -3559994220644853643
-    second: Shoot_Test_65
+      213: -2313477232009796578
+    second: Shoot_Test_Pallete_Swap_65
   - first:
-      213: 6010328424314277785
-    second: Shoot_Test_66
+      213: 8982708455308708991
+    second: Shoot_Test_Pallete_Swap_66
   - first:
-      213: 1513285956253832966
-    second: Shoot_Test_67
+      213: -4602617454210632917
+    second: Shoot_Test_Pallete_Swap_67
   - first:
-      213: 366861363751926345
-    second: Shoot_Test_68
+      213: 827125247489172947
+    second: Shoot_Test_Pallete_Swap_68
   - first:
-      213: -642741118583117274
-    second: Shoot_Test_69
+      213: 8139625230195435865
+    second: Shoot_Test_Pallete_Swap_69
   - first:
-      213: 7384730735950441635
-    second: Shoot_Test_70
+      213: -2246955850564038384
+    second: Shoot_Test_Pallete_Swap_70
   - first:
-      213: -2095437883014142724
-    second: Shoot_Test_71
+      213: -8594958749582708597
+    second: Shoot_Test_Pallete_Swap_71
   - first:
-      213: 2432341724015904258
-    second: Shoot_Test_72
+      213: -5816635562989562063
+    second: Shoot_Test_Pallete_Swap_72
   - first:
-      213: -40174904173299567
-    second: Shoot_Test_73
+      213: -8642018909926017389
+    second: Shoot_Test_Pallete_Swap_73
   - first:
-      213: 4699620349899335894
-    second: Shoot_Test_74
+      213: 5691226034885760729
+    second: Shoot_Test_Pallete_Swap_74
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -352,7 +352,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Shoot_Test_0
+      name: Shoot_Test_Pallete_Swap_0
       rect:
         serializedVersion: 2
         x: 0
@@ -366,14 +366,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ef254cbe33214c50800000000000000
-      internalID: 6647633277329158119
+      spriteID: 73efba4d2f82ed9c0800000000000000
+      internalID: -3900635203841032649
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_1
+      name: Shoot_Test_Pallete_Swap_1
       rect:
         serializedVersion: 2
         x: 48
@@ -387,14 +387,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5785a86da11c96040800000000000000
-      internalID: 4641453211994708085
+      spriteID: 894a99f039160b1f0800000000000000
+      internalID: -1031217030418029416
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_2
+      name: Shoot_Test_Pallete_Swap_2
       rect:
         serializedVersion: 2
         x: 96
@@ -408,14 +408,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95b2e1d680dc508d0800000000000000
-      internalID: -2880670950559437991
+      spriteID: 9bc2f74f271dda300800000000000000
+      internalID: 265098244743179449
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_3
+      name: Shoot_Test_Pallete_Swap_3
       rect:
         serializedVersion: 2
         x: 144
@@ -429,14 +429,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ccc79c9a5048f1d0800000000000000
-      internalID: -3316830367639941946
+      spriteID: 766fba75b8982aee0800000000000000
+      internalID: -1251286514891229593
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_4
+      name: Shoot_Test_Pallete_Swap_4
       rect:
         serializedVersion: 2
         x: 192
@@ -450,14 +450,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb3f36f4b47951880800000000000000
-      internalID: -8640833960330136641
+      spriteID: 23512225a7c4200d0800000000000000
+      internalID: -3458117475619433166
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_5
+      name: Shoot_Test_Pallete_Swap_5
       rect:
         serializedVersion: 2
         x: 240
@@ -471,14 +471,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f680022a289732cf0800000000000000
-      internalID: -278245149994121105
+      spriteID: 8fd2716849d673730800000000000000
+      internalID: 3978769280477375992
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_6
+      name: Shoot_Test_Pallete_Swap_6
       rect:
         serializedVersion: 2
         x: 288
@@ -492,14 +492,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07dfc82410a316a10800000000000000
-      internalID: 1900864294812974448
+      spriteID: 702e10785a7341970800000000000000
+      internalID: 8724659562197672455
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_7
+      name: Shoot_Test_Pallete_Swap_7
       rect:
         serializedVersion: 2
         x: 336
@@ -513,14 +513,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5201daa485b6861a0800000000000000
-      internalID: -6816080009071095771
+      spriteID: 89aef7351b08035b0800000000000000
+      internalID: -5390667254864024936
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_8
+      name: Shoot_Test_Pallete_Swap_8
       rect:
         serializedVersion: 2
         x: 384
@@ -534,14 +534,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d151f5142ca6241e0800000000000000
-      internalID: -2215090684159912675
+      spriteID: 39247146faf18d960800000000000000
+      internalID: 7626880807110918803
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_9
+      name: Shoot_Test_Pallete_Swap_9
       rect:
         serializedVersion: 2
         x: 432
@@ -555,14 +555,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 711471ef3c903bbe0800000000000000
-      internalID: -1462814716579069673
+      spriteID: ee76fc4e1b13293d0800000000000000
+      internalID: -3201441744989231122
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_10
+      name: Shoot_Test_Pallete_Swap_10
       rect:
         serializedVersion: 2
         x: 480
@@ -576,14 +576,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a1d987a95699ffc0800000000000000
-      internalID: -3460569526850432607
+      spriteID: 7cb3a9cfa009cd270800000000000000
+      internalID: 8276648592062168007
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_11
+      name: Shoot_Test_Pallete_Swap_11
       rect:
         serializedVersion: 2
         x: 528
@@ -597,14 +597,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b6bbc79ff5eb8110800000000000000
-      internalID: 1264357006333687472
+      spriteID: a6b85478d4ec1a300800000000000000
+      internalID: 261717085741484906
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_12
+      name: Shoot_Test_Pallete_Swap_12
       rect:
         serializedVersion: 2
         x: 576
@@ -618,14 +618,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d811afbc9973b5c10800000000000000
-      internalID: 2043287989634339213
+      spriteID: 2afa8629361802e60800000000000000
+      internalID: 7935484808084893602
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_13
+      name: Shoot_Test_Pallete_Swap_13
       rect:
         serializedVersion: 2
         x: 0
@@ -639,14 +639,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3ff70e006297c8d0800000000000000
-      internalID: -2826129299901776066
+      spriteID: 005d826f7aafe7100800000000000000
+      internalID: 107799040399824128
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_14
+      name: Shoot_Test_Pallete_Swap_14
       rect:
         serializedVersion: 2
         x: 48
@@ -660,14 +660,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e59d49b159380e720800000000000000
-      internalID: 2873441238698482014
+      spriteID: 1bd468e9410199cc0800000000000000
+      internalID: -3703911537790530127
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_15
+      name: Shoot_Test_Pallete_Swap_15
       rect:
         serializedVersion: 2
         x: 96
@@ -681,14 +681,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c506fd8221681d7e0800000000000000
-      internalID: -1742464168262410148
+      spriteID: 7cbcf26852a6621e0800000000000000
+      internalID: -2222972656663147577
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_16
+      name: Shoot_Test_Pallete_Swap_16
       rect:
         serializedVersion: 2
         x: 144
@@ -702,14 +702,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8659e0259af850ec0800000000000000
-      internalID: -3601314369623911064
+      spriteID: 0ce0b34968df5eb70800000000000000
+      internalID: 8927820590786219712
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_17
+      name: Shoot_Test_Pallete_Swap_17
       rect:
         serializedVersion: 2
         x: 192
@@ -723,14 +723,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49440fe8ce23e5430800000000000000
-      internalID: 3773509529374835860
+      spriteID: ea54d1b6bba617ea0800000000000000
+      internalID: -5876798685553277522
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_18
+      name: Shoot_Test_Pallete_Swap_18
       rect:
         serializedVersion: 2
         x: 240
@@ -744,14 +744,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8bf78d4bb1efb7a0800000000000000
-      internalID: -6359115954247959669
+      spriteID: 8249eba1dcf7e6020800000000000000
+      internalID: 2336945775545586728
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_19
+      name: Shoot_Test_Pallete_Swap_19
       rect:
         serializedVersion: 2
         x: 288
@@ -765,14 +765,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fcf9b704f1bc01fe0800000000000000
-      internalID: -1220252163931136049
+      spriteID: 5383da0b00ef3e800800000000000000
+      internalID: 640634850934339637
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_20
+      name: Shoot_Test_Pallete_Swap_20
       rect:
         serializedVersion: 2
         x: 336
@@ -786,14 +786,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b0c15216383f57f0800000000000000
-      internalID: -621716418667102030
+      spriteID: aea2e2f316c38bcd0800000000000000
+      internalID: -2542215601281160470
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_21
+      name: Shoot_Test_Pallete_Swap_21
       rect:
         serializedVersion: 2
         x: 384
@@ -807,14 +807,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6af6fe1e06c844f0800000000000000
-      internalID: -844207166180623761
+      spriteID: 8a04aa741033b9380800000000000000
+      internalID: -8963514552760516440
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_22
+      name: Shoot_Test_Pallete_Swap_22
       rect:
         serializedVersion: 2
         x: 432
@@ -828,14 +828,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 839929d03a6b00c50800000000000000
-      internalID: 6629499462913005880
+      spriteID: 49c81cdb5c18abbc0800000000000000
+      internalID: -3766555452049879916
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_23
+      name: Shoot_Test_Pallete_Swap_23
       rect:
         serializedVersion: 2
         x: 480
@@ -849,14 +849,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87fe158dbf68149b0800000000000000
-      internalID: -5097644886982529160
+      spriteID: 8359b9bebbf5de0e0800000000000000
+      internalID: -2239028179016903368
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_24
+      name: Shoot_Test_Pallete_Swap_24
       rect:
         serializedVersion: 2
         x: 528
@@ -870,14 +870,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3892248a8546cb680800000000000000
-      internalID: -8737998845062796925
+      spriteID: 35b4d4a6a580fc200800000000000000
+      internalID: 202389692678490963
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_25
+      name: Shoot_Test_Pallete_Swap_25
       rect:
         serializedVersion: 2
         x: 576
@@ -891,14 +891,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b02bde733e0d3ae0800000000000000
-      internalID: -1568081480920653639
+      spriteID: 43a8bc40a1a6829b0800000000000000
+      internalID: -5104713517642315212
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_26
+      name: Shoot_Test_Pallete_Swap_26
       rect:
         serializedVersion: 2
         x: 0
@@ -912,14 +912,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 250fe6ea55ac4f3b0800000000000000
-      internalID: -5479532377255514030
+      spriteID: f2a5bf21c33962410800000000000000
+      internalID: 1452009816099346991
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_27
+      name: Shoot_Test_Pallete_Swap_27
       rect:
         serializedVersion: 2
         x: 48
@@ -933,14 +933,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01ae129556c388a80800000000000000
-      internalID: -8464449093658088944
+      spriteID: 1c0ee560d0c6cfcf0800000000000000
+      internalID: -217179878823370559
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_28
+      name: Shoot_Test_Pallete_Swap_28
       rect:
         serializedVersion: 2
         x: 96
@@ -954,14 +954,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d4aeae55047d7ad0800000000000000
-      internalID: -2702876634940267312
+      spriteID: 3ad4d4071d58238a0800000000000000
+      internalID: -6326847391923352157
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_29
+      name: Shoot_Test_Pallete_Swap_29
       rect:
         serializedVersion: 2
         x: 144
@@ -975,14 +975,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb6b59c6cc517c980800000000000000
-      internalID: -8518816202408741188
+      spriteID: a706568b826144260800000000000000
+      internalID: 7080808878281416826
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_30
+      name: Shoot_Test_Pallete_Swap_30
       rect:
         serializedVersion: 2
         x: 192
@@ -996,14 +996,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1f118d3800420440800000000000000
-      internalID: 4900549748668309275
+      spriteID: 3053e31d385d4c950800000000000000
+      internalID: 6468529726938821891
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_31
+      name: Shoot_Test_Pallete_Swap_31
       rect:
         serializedVersion: 2
         x: 240
@@ -1017,14 +1017,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87675e71d14c96d00800000000000000
-      internalID: 966519224281691768
+      spriteID: 1461ed02c0cb397a0800000000000000
+      internalID: -6371542287522064831
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_32
+      name: Shoot_Test_Pallete_Swap_32
       rect:
         serializedVersion: 2
         x: 288
@@ -1038,14 +1038,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec82553ca7025e830800000000000000
-      internalID: 4099718747425941710
+      spriteID: ee3f403fbca335980800000000000000
+      internalID: -8551426619816479762
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_33
+      name: Shoot_Test_Pallete_Swap_33
       rect:
         serializedVersion: 2
         x: 336
@@ -1059,14 +1059,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dabfb1bd04f371680800000000000000
-      internalID: -8784483000376362067
+      spriteID: b84d68bf8f926a980800000000000000
+      internalID: -8528082695030909813
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_34
+      name: Shoot_Test_Pallete_Swap_34
       rect:
         serializedVersion: 2
         x: 384
@@ -1080,14 +1080,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48e0d115ac14248c0800000000000000
-      internalID: -4016575580461003132
+      spriteID: 7f91d81d165f2d8d0800000000000000
+      internalID: -2822924215931561481
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_35
+      name: Shoot_Test_Pallete_Swap_35
       rect:
         serializedVersion: 2
         x: 432
@@ -1101,14 +1101,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52bd3f17e28e613e0800000000000000
-      internalID: -2083222491434329307
+      spriteID: 670c2ffe2ee6dde20800000000000000
+      internalID: 3376977216565067894
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_36
+      name: Shoot_Test_Pallete_Swap_36
       rect:
         serializedVersion: 2
         x: 480
@@ -1122,14 +1122,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9508741d025ed8e80800000000000000
-      internalID: -8174625819494743975
+      spriteID: 2264e35505897c5a0800000000000000
+      internalID: -6501060066291071454
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_37
+      name: Shoot_Test_Pallete_Swap_37
       rect:
         serializedVersion: 2
         x: 528
@@ -1143,14 +1143,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c29c14adaba52b290800000000000000
-      internalID: -7876133039745414868
+      spriteID: f5b1704288aada3d0800000000000000
+      internalID: -3193709059039093921
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_38
+      name: Shoot_Test_Pallete_Swap_38
       rect:
         serializedVersion: 2
         x: 576
@@ -1164,14 +1164,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11f914c1cb03fffb0800000000000000
-      internalID: -4611913908918051055
+      spriteID: 095c885f52ff96490800000000000000
+      internalID: -7752384745043343984
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_39
+      name: Shoot_Test_Pallete_Swap_39
       rect:
         serializedVersion: 2
         x: 0
@@ -1185,14 +1185,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f74ebda841cca240800000000000000
-      internalID: 4804427420394211315
+      spriteID: 076d6e3b63ce93030800000000000000
+      internalID: 3475068307183687280
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_40
+      name: Shoot_Test_Pallete_Swap_40
       rect:
         serializedVersion: 2
         x: 48
@@ -1206,14 +1206,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4001752297a8b7710800000000000000
-      internalID: 1692098337879560196
+      spriteID: d705a3d025cdd8e00800000000000000
+      internalID: 1048736533214548093
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_41
+      name: Shoot_Test_Pallete_Swap_41
       rect:
         serializedVersion: 2
         x: 96
@@ -1227,14 +1227,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b71eb171e9e57efe0800000000000000
-      internalID: -1159854345939066501
+      spriteID: 5a2d3b5f47b0f5a20800000000000000
+      internalID: 3053171669346800293
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_42
+      name: Shoot_Test_Pallete_Swap_42
       rect:
         serializedVersion: 2
         x: 144
@@ -1248,14 +1248,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b3d1275a12858080800000000000000
-      internalID: -9185792815309663312
+      spriteID: f98e86f00612772d0800000000000000
+      internalID: -3281117107057006433
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_43
+      name: Shoot_Test_Pallete_Swap_43
       rect:
         serializedVersion: 2
         x: 192
@@ -1269,14 +1269,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70146c96c6f4acc50800000000000000
-      internalID: 6686243923834585351
+      spriteID: 8dc9c628177738ed0800000000000000
+      internalID: -2412953645937287976
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_44
+      name: Shoot_Test_Pallete_Swap_44
       rect:
         serializedVersion: 2
         x: 240
@@ -1290,14 +1290,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80baf6b772f403ff0800000000000000
-      internalID: -58459764162581752
+      spriteID: 39c25a567fa825810800000000000000
+      internalID: 1752616000167423123
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_45
+      name: Shoot_Test_Pallete_Swap_45
       rect:
         serializedVersion: 2
         x: 288
@@ -1311,14 +1311,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9415a0ec80b914b80800000000000000
-      internalID: -8412272166832549559
+      spriteID: 641888b64b4ed2100800000000000000
+      internalID: 84975431539261766
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_46
+      name: Shoot_Test_Pallete_Swap_46
       rect:
         serializedVersion: 2
         x: 336
@@ -1332,14 +1332,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b050bbdecdff908d0800000000000000
-      internalID: -2879489162380376821
+      spriteID: 496e673936bea63f0800000000000000
+      internalID: -906653562053400940
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_47
+      name: Shoot_Test_Pallete_Swap_47
       rect:
         serializedVersion: 2
         x: 384
@@ -1353,14 +1353,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 491482fce7b343b70800000000000000
-      internalID: 8877786181281530260
+      spriteID: 02d76619383beb1f0800000000000000
+      internalID: -1027186287332393696
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_48
+      name: Shoot_Test_Pallete_Swap_48
       rect:
         serializedVersion: 2
         x: 432
@@ -1374,14 +1374,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08111389fd205f4b0800000000000000
-      internalID: -5407412618234097280
+      spriteID: 093469a60170e0820800000000000000
+      internalID: 2886252178280170384
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_49
+      name: Shoot_Test_Pallete_Swap_49
       rect:
         serializedVersion: 2
         x: 480
@@ -1395,14 +1395,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00846f1338dfd7680800000000000000
-      internalID: -8755563360617609216
+      spriteID: 9c207e90cedb276f0800000000000000
+      internalID: -688278971558198583
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_50
+      name: Shoot_Test_Pallete_Swap_50
       rect:
         serializedVersion: 2
         x: 528
@@ -1416,14 +1416,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbfc4547276ca1700800000000000000
-      internalID: 511939702540259261
+      spriteID: 66e4cc46a292de8b0800000000000000
+      internalID: -5121391939193909658
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_51
+      name: Shoot_Test_Pallete_Swap_51
       rect:
         serializedVersion: 2
         x: 576
@@ -1437,14 +1437,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07e93a52ff60ffdc0800000000000000
-      internalID: -3603153483955200400
+      spriteID: bbbe3b24926431db0800000000000000
+      internalID: -4822433632956978245
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_52
+      name: Shoot_Test_Pallete_Swap_52
       rect:
         serializedVersion: 2
         x: 0
@@ -1458,14 +1458,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe2e56a7e4567cb80800000000000000
-      internalID: -8374613594336795921
+      spriteID: db79f0a4b1c376b70800000000000000
+      internalID: 8892142077170653117
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_53
+      name: Shoot_Test_Pallete_Swap_53
       rect:
         serializedVersion: 2
         x: 48
@@ -1479,14 +1479,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 075422ed85a6b1c80800000000000000
-      internalID: -8350964154111998608
+      spriteID: bead8298814ae4b40800000000000000
+      internalID: 5426455026315352811
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_54
+      name: Shoot_Test_Pallete_Swap_54
       rect:
         serializedVersion: 2
         x: 96
@@ -1500,14 +1500,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6a49fca604a59e70800000000000000
-      internalID: 9121376968887585387
+      spriteID: 9b1ff68e24fa4b000800000000000000
+      internalID: 50858197710270905
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_55
+      name: Shoot_Test_Pallete_Swap_55
       rect:
         serializedVersion: 2
         x: 144
@@ -1521,14 +1521,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24447352094e0f4e0800000000000000
-      internalID: -1949807330900622270
+      spriteID: 27badd29d94097700800000000000000
+      internalID: 538466705267862386
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_56
+      name: Shoot_Test_Pallete_Swap_56
       rect:
         serializedVersion: 2
         x: 192
@@ -1542,14 +1542,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 704586d07fc5cb380800000000000000
-      internalID: -8954179742967770105
+      spriteID: 2669b7ec6c2066320800000000000000
+      internalID: 2550729291842950754
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_57
+      name: Shoot_Test_Pallete_Swap_57
       rect:
         serializedVersion: 2
         x: 240
@@ -1563,14 +1563,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5007c37dc0078bcb0800000000000000
-      internalID: -4848001798411358203
+      spriteID: 4e8fe8f755db527a0800000000000000
+      internalID: -6402503120327345948
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_58
+      name: Shoot_Test_Pallete_Swap_58
       rect:
         serializedVersion: 2
         x: 288
@@ -1584,14 +1584,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f78456a0255424a0800000000000000
-      internalID: -6619071953609914381
+      spriteID: 74b84763456357360800000000000000
+      internalID: 7166694117348772679
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_59
+      name: Shoot_Test_Pallete_Swap_59
       rect:
         serializedVersion: 2
         x: 336
@@ -1605,14 +1605,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fdfbada860adab210800000000000000
-      internalID: 1349630759985135583
+      spriteID: 9948235f7394ea920800000000000000
+      internalID: 3003418506188457113
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_60
+      name: Shoot_Test_Pallete_Swap_60
       rect:
         serializedVersion: 2
         x: 384
@@ -1626,14 +1626,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 855bdf9b099446df0800000000000000
-      internalID: -187944398498187944
+      spriteID: 3fa07f7b73d5957c0800000000000000
+      internalID: -4082129093343638797
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_61
+      name: Shoot_Test_Pallete_Swap_61
       rect:
         serializedVersion: 2
         x: 432
@@ -1647,14 +1647,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ca3b4420faee0bc0800000000000000
-      internalID: -3814853517214270778
+      spriteID: e43e79caebdf94140800000000000000
+      internalID: 4704570281146442574
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_62
+      name: Shoot_Test_Pallete_Swap_62
       rect:
         serializedVersion: 2
         x: 480
@@ -1668,14 +1668,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e13421d053473d1d0800000000000000
-      internalID: -3327187928495275234
+      spriteID: 9bfa2c03df0eab3d0800000000000000
+      internalID: -3189990007989162055
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_63
+      name: Shoot_Test_Pallete_Swap_63
       rect:
         serializedVersion: 2
         x: 528
@@ -1689,14 +1689,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c83fefb859f966760800000000000000
-      internalID: 7450818098178749324
+      spriteID: 76de723c4ccce83a0800000000000000
+      internalID: -6661161653374554777
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_64
+      name: Shoot_Test_Pallete_Swap_64
       rect:
         serializedVersion: 2
         x: 576
@@ -1710,14 +1710,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24c99ac2b2dcab990800000000000000
-      internalID: -7369352254921794494
+      spriteID: 56ed6bd9fa05a2c10800000000000000
+      internalID: 2029523297279336037
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_65
+      name: Shoot_Test_Pallete_Swap_65
       rect:
         serializedVersion: 2
         x: 0
@@ -1731,14 +1731,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57815043e1c589ec0800000000000000
-      internalID: -3559994220644853643
+      spriteID: e142a1ef6b0e4efd0800000000000000
+      internalID: -2313477232009796578
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_66
+      name: Shoot_Test_Pallete_Swap_66
       rect:
         serializedVersion: 2
         x: 48
@@ -1752,14 +1752,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99f8faa9bd9f86350800000000000000
-      internalID: 6010328424314277785
+      spriteID: f7cc2976fbdf8ac70800000000000000
+      internalID: 8982708455308708991
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_67
+      name: Shoot_Test_Pallete_Swap_67
       rect:
         serializedVersion: 2
         x: 96
@@ -1773,14 +1773,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 607d81a3f85400510800000000000000
-      internalID: 1513285956253832966
+      spriteID: b2333c4afc73020c0800000000000000
+      internalID: -4602617454210632917
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_68
+      name: Shoot_Test_Pallete_Swap_68
       rect:
         serializedVersion: 2
         x: 144
@@ -1794,14 +1794,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94abf34777a571500800000000000000
-      internalID: 366861363751926345
+      spriteID: 3d56951c70a8a7b00800000000000000
+      internalID: 827125247489172947
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_69
+      name: Shoot_Test_Pallete_Swap_69
       rect:
         serializedVersion: 2
         x: 192
@@ -1815,14 +1815,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62ae058ab568417f0800000000000000
-      internalID: -642741118583117274
+      spriteID: 9592b927502c5f070800000000000000
+      internalID: 8139625230195435865
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_70
+      name: Shoot_Test_Pallete_Swap_70
       rect:
         serializedVersion: 2
         x: 240
@@ -1836,14 +1836,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ac2c367a75db7660800000000000000
-      internalID: 7384730735950441635
+      spriteID: 011152d0f8531d0e0800000000000000
+      internalID: -2246955850564038384
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_71
+      name: Shoot_Test_Pallete_Swap_71
       rect:
         serializedVersion: 2
         x: 288
@@ -1857,14 +1857,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf4ab06f8528be2e0800000000000000
-      internalID: -2095437883014142724
+      spriteID: b80bcf72e8298b880800000000000000
+      internalID: -8594958749582708597
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_72
+      name: Shoot_Test_Pallete_Swap_72
       rect:
         serializedVersion: 2
         x: 336
@@ -1878,14 +1878,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 206445039e961c120800000000000000
-      internalID: 2432341724015904258
+      spriteID: 1375a18f5c8274fa0800000000000000
+      internalID: -5816635562989562063
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_73
+      name: Shoot_Test_Pallete_Swap_73
       rect:
         serializedVersion: 2
         x: 384
@@ -1899,14 +1899,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1987dd33325417ff0800000000000000
-      internalID: -40174904173299567
+      spriteID: 396b6abb691611880800000000000000
+      internalID: -8642018909926017389
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shoot_Test_74
+      name: Shoot_Test_Pallete_Swap_74
       rect:
         serializedVersion: 2
         x: 432
@@ -1920,8 +1920,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d862fefec7683140800000000000000
-      internalID: 4699620349899335894
+      spriteID: 9d612d1eceb4bfe40800000000000000
+      internalID: 5691226034885760729
       vertices: []
       indices: 
       edges: []

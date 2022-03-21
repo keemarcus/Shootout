@@ -35,6 +35,7 @@ public class Controller : MonoBehaviour
         switch(gameState){
             case GameState.Idle:
                 // status.text = null;
+                // playerAnim.SetBool("Is Shooting", false);
                 break;
             case GameState.Active:
                 UpdateTimer(firstTargetSpawned);
@@ -51,25 +52,25 @@ public class Controller : MonoBehaviour
 
         switch(playerState){
             case CharacterState.Healthy:
-                playerAnim.SetFloat("State", 0f);
+                playerAnim.SetInteger("State", 1);
                 break;
             case CharacterState.Wounded:
-                playerAnim.SetFloat("State", .5f);
+                playerAnim.SetInteger("State", 2);
                 break;
             case CharacterState.Dead:
-                playerAnim.SetFloat("State", 1f);
+                playerAnim.SetInteger("State", 3);
                 break;
         }
 
         switch(enemyState){
             case CharacterState.Healthy:
-                enemyAnim.SetFloat("State", 0f);
+                enemyAnim.SetInteger("State", 1);
                 break;
             case CharacterState.Wounded:
-                enemyAnim.SetFloat("State", .5f);
+                enemyAnim.SetInteger("State", 2);
                 break;
             case CharacterState.Dead:
-                enemyAnim.SetFloat("State", 1f);
+                enemyAnim.SetInteger("State", 3);
                 break;
         }
     }
@@ -128,6 +129,9 @@ public class Controller : MonoBehaviour
 
         // destroy the current target
         if(currentTarget != null){Destroy(currentTarget);}
+
+        playerAnim.SetBool("Is Shooting", true);
+        enemyAnim.SetBool("Is Shooting", true);
 
         // print our results to the console
         // Debug.Log("Targets Hit: " + targetsHit + "\n" + "Time: " + playerTime.ToString("f3"));
@@ -201,12 +205,16 @@ public class Controller : MonoBehaviour
         targetsHit = 0;
         clickCount = 0;
         firstTargetSpawned = false;
+
+        StartCoroutine(ResetAnimations());
     }
 
     private void EndGame(string winner){
         // print the final outcome
         // Debug.Log(winner + " Won");
         status.text = winner + " Won";
+
+        StartCoroutine(ResetAnimations());
 
         gameState = GameState.Idle;
     }
@@ -272,6 +280,15 @@ public class Controller : MonoBehaviour
         if(result > 3){result = 3;}
 
         return result;
+    }
+
+    private IEnumerator ResetAnimations(){
+        // wait long enough for the animations to play
+        yield return new WaitForSeconds(1);
+
+        // reset the shooting variable to switch back to the idle animations
+        playerAnim.SetBool("Is Shooting", false);
+        enemyAnim.SetBool("Is Shooting", false);
     }
     // private void Start() {
     //     // generate a bunch of enemyhits
