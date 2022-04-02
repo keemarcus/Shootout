@@ -7,6 +7,8 @@ public class Controller : MonoBehaviour
 {
     // reference to target prefab
     public GameObject target;
+    // reference to aiming area object
+    public GameObject aimingArea;
     // variable to reference the active target
     private GameObject currentTarget = null;
     // boundries for where targets can spawn
@@ -111,6 +113,9 @@ public class Controller : MonoBehaviour
         gameState = GameState.Active;
         startTime = Time.realtimeSinceStartup;
 
+        // activate aiming area object
+        aimingArea.SetActive(true);
+
         // reset all the relevant variables
         targetsHit = 0;
         clickCount = 0;
@@ -124,6 +129,9 @@ public class Controller : MonoBehaviour
         int enemyHits = GenerateEnemyHits();
         float enemyTime = GenerateEnemyTime();
 
+        // deactivate aiming area object
+        aimingArea.SetActive(false);
+
         bool playerOutcome;
         bool enemyOutcome;
 
@@ -132,12 +140,6 @@ public class Controller : MonoBehaviour
 
         playerAnim.SetBool("Is Shooting", true);
         enemyAnim.SetBool("Is Shooting", true);
-
-        // print our results to the console
-        // Debug.Log("Targets Hit: " + targetsHit + "\n" + "Time: " + playerTime.ToString("f3"));
-
-        // print enemy results
-        // Debug.Log("Enemy Hits: " + enemyHits + "\n" + "Enemy Time: " + enemyTime.ToString("f3"));
 
         // first, generate the outcome of the person who shot first (player will win if they tied)
         //  then, if they hit, subtract 1 from the other person's hits and generate their outcome
@@ -187,12 +189,6 @@ public class Controller : MonoBehaviour
         if(playerState == CharacterState.Wounded && targetsHit > 0){targetsHit --;}
         if(enemyState == CharacterState.Wounded && enemyHits > 0){enemyHits --;}
 
-        // print the final hit totals
-        // Debug.Log("Player Hits: " + targetsHit + "\n" + "Enemy Hits: " + enemyHits);
-
-        // print the outcome to the console
-        // Debug.Log("Player Hit? - " + playerOutcome + "\n" + "Enemy Hit? - " + enemyOutcome);
-
         // if we made it to this point then neither character is dead, so restart
         Restart();
     }
@@ -201,12 +197,14 @@ public class Controller : MonoBehaviour
         gameState = GameState.Active;
         startTime = Time.realtimeSinceStartup;
 
+        
+
         // reset all the relevant variables
         targetsHit = 0;
         clickCount = 0;
         firstTargetSpawned = false;
 
-        StartCoroutine(ResetAnimations());
+        StartCoroutine(ResetAnimations(false));
     }
 
     private void EndGame(string winner){
@@ -214,7 +212,7 @@ public class Controller : MonoBehaviour
         // Debug.Log(winner + " Won");
         status.text = winner + " Won";
 
-        StartCoroutine(ResetAnimations());
+        StartCoroutine(ResetAnimations(true));
 
         gameState = GameState.Idle;
     }
@@ -282,22 +280,16 @@ public class Controller : MonoBehaviour
         return result;
     }
 
-    private IEnumerator ResetAnimations(){
+    private IEnumerator ResetAnimations(bool gameOver){
         // wait long enough for the animations to play
         yield return new WaitForSeconds(1);
 
         // reset the shooting variable to switch back to the idle animations
         playerAnim.SetBool("Is Shooting", false);
         enemyAnim.SetBool("Is Shooting", false);
+        // activate aiming area object
+        if(!gameOver){aimingArea.SetActive(true);}
     }
-    // private void Start() {
-    //     // generate a bunch of enemyhits
-    //     float total = 0;
-    //     for(int i=0; i<100; i++){
-    //         total += GenerateEnemyTime();
-    //     }
-    //     Debug.Log((total/100).ToString("f3"));
-    // }
 
     private enum GameState{
         Idle,
