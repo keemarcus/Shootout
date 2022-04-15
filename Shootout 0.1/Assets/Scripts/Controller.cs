@@ -31,6 +31,13 @@ public class Controller : MonoBehaviour
     private CharacterState enemyState = CharacterState.Healthy;
     public Animator playerAnim;
     public Animator enemyAnim;
+    public MusicController musicController;
+    private IEnumerator lowerVolume;
+    private IEnumerator raiseVolume;
+    void Start(){
+        lowerVolume = musicController.lowerVolume();
+        raiseVolume = musicController.raiseVolume();
+    }
 
     void Update()
     {
@@ -122,6 +129,10 @@ public class Controller : MonoBehaviour
         playerState = CharacterState.Healthy;
         enemyState = CharacterState.Healthy;
         firstTargetSpawned = false;
+
+        // lower the music volume
+        if(musicController.changingVolume){StopCoroutine(raiseVolume);}
+        StartCoroutine(lowerVolume);
     }
 
     private void DetermineOutcome(){
@@ -215,6 +226,10 @@ public class Controller : MonoBehaviour
         StartCoroutine(ResetAnimations(true));
 
         gameState = GameState.Idle;
+
+        // raise the music volume
+        if(musicController.changingVolume){StopCoroutine(lowerVolume);}
+        StartCoroutine(raiseVolume);
     }
 
     public void Exit(){
