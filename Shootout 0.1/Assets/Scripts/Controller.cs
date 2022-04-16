@@ -234,7 +234,8 @@ public class Controller : MonoBehaviour
 
     public void Exit(){
         // exit game mode
-        UnityEditor.EditorApplication.isPlaying = false;
+        Application.Quit();
+        // UnityEditor.EditorApplication.isPlaying = false;
     }
 
     private bool CheckForHit(int hits){
